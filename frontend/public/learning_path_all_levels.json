@@ -1,0 +1,945 @@
+{
+  "program": {
+    "name": "AI English Coaching Program",
+    "philosophy": "Conversation-driven learning and unconscious language acquisition",
+    "total_days": 90,
+    "core_principle": "Speak from Day 1. Grammar is absorbed through exposure, not correction. Confidence before correctness.",
+    "coaching_rule": "Never correct mid-conversation. Always suggest better: 'You could also say it like this...'",
+    "assessment_frequency": "Every week from Week 2 (every 7 days)",
+    "proficiency_bands": ["beginner", "intermediate", "advanced"]
+  },
+
+  "preliminary_assessment": {
+    "day": 0,
+    "label": "Preliminary Assessment",
+    "purpose": "Determine learner proficiency band before path is assigned",
+    "total_duration_minutes": 45,
+    "tasks": [
+      {
+        "task": "voice_test",
+        "instruction": "Speak for 2-3 minutes on a simple topic eg describe your daily routine",
+        "duration_minutes": 10,
+        "ai_evaluates": ["pronunciation_clarity", "fluency", "filler_words", "confidence"]
+      },
+      {
+        "task": "written_grammar_test",
+        "instruction": "Error correction and sentence completion",
+        "question_count": 20,
+        "duration_minutes": 15,
+        "ai_evaluates": ["grammar_accuracy", "sentence_structure"]
+      },
+      {
+        "task": "vocabulary_test",
+        "instruction": "Word recognition and fill-in-the-blank in context",
+        "question_count": 15,
+        "duration_minutes": 10,
+        "ai_evaluates": ["vocabulary_range", "contextual_accuracy"]
+      },
+      {
+        "task": "listening_comprehension",
+        "instruction": "Listen to a short audio clip and answer 5 questions",
+        "duration_minutes": 10,
+        "ai_evaluates": ["listening_comprehension", "response_accuracy"]
+      }
+    ],
+    "scoring": {
+      "total_score_range": "0 to 100",
+      "band_assignment": {
+        "beginner": {
+          "score_range": "0 to 40",
+          "description": "Limited vocabulary, significant hesitation, basic sentence formation, frequent errors"
+        },
+        "intermediate": {
+          "score_range": "41 to 70",
+          "description": "Functional communication, some fluency, moderate vocabulary, occasional errors under pressure"
+        },
+        "advanced": {
+          "score_range": "71 to 100",
+          "description": "Clear communication, good vocabulary range, confident in routine scenarios, needs polishing for professional contexts"
+        }
+      }
+    },
+    "post_assessment": {
+      "ai_generates_path": true,
+      "admin_can_override_band": true,
+      "learner_notified_of_band": true,
+      "path_starts": "Day 1"
+    }
+  },
+
+  "paths": {
+
+    "beginner": {
+      "band": "beginner",
+      "score_range": "0 to 40",
+      "description": "Learner has very limited spoken English. Primary goal is building comfort with speaking aloud, basic sentence formation, and everyday vocabulary before moving to professional scenarios.",
+      "total_days": 90,
+
+      "daily_structure": {
+        "applies_to_days": "2 to 89",
+        "total_duration_minutes": { "min": 30, "max": 45 },
+        "blocks": {
+          "absorb_block": {
+            "order": 1,
+            "duration_minutes": 15,
+            "items": [
+              {
+                "name": "Watch clip",
+                "description": "3 min simple everyday English video with subtitles enabled",
+                "duration_minutes": 5
+              },
+              {
+                "name": "Listen to podcast",
+                "description": "5 min slow-paced beginner-friendly audio. Topics: daily life, simple conversations",
+                "duration_minutes": 6
+              },
+              {
+                "name": "Vocabulary in context",
+                "description": "5 basic everyday words shown in simple sentences. No definitions — only usage.",
+                "count": 5,
+                "duration_minutes": 4
+              }
+            ]
+          },
+          "speak_block": {
+            "order": 2,
+            "duration_minutes": 20,
+            "items": [
+              {
+                "name": "AI conversation",
+                "count": 2,
+                "description": "Simple topic like your name, family, daily routine. Short exchanges. AI leads gently.",
+                "duration_minutes": 10,
+                "coaching_rule": "Maximum encouragement. AI never flags errors. Only models better sentences after learner finishes."
+              },
+              {
+                "name": "Guided role play",
+                "count": 1,
+                "description": "Fully scripted first — learner reads then repeats in own words. eg: buying groceries, asking for the time",
+                "duration_minutes": 7
+              },
+              {
+                "name": "Extempore speaking",
+                "count": 1,
+                "description": "Speak for 1 minute on a very simple topic. No pressure. AI only listens and responds warmly.",
+                "duration_minutes": 3,
+                "ai_tracks": ["filler_words", "response_length", "hesitation_frequency"]
+              }
+            ]
+          },
+          "reinforce_block": {
+            "order": 3,
+            "duration_minutes": 10,
+            "rule": "Pattern recognition only. No grammar rules stated. Exercises use pictures, simple sentences, basic fill-in-the-blank.",
+            "exercise_count": 5,
+            "exercise_types": [
+              { "type": "basic_sentence_building", "format": ["mcq", "fill_in_blank"] },
+              { "type": "vocabulary_matching", "format": ["mcq"] },
+              { "type": "simple_reading", "description": "50-80 word passage + 2 questions", "format": ["mcq"] },
+              { "type": "basic_writing", "description": "Complete a sentence or write 2-3 sentences", "format": ["short_answer"] },
+              { "type": "listening", "description": "Short clip + 2 simple questions", "format": ["mcq"] }
+            ],
+            "feedback_rule": "Show correct answer with a warm explanation and a simple example. Never say 'wrong'."
+          }
+        }
+      },
+
+      "weekly_plan": {
+        "week_1": {
+          "days": "1 to 7",
+          "theme": "Comfort and first words",
+          "scenario_focus": "Personal introductions and daily life",
+          "scenario_examples": ["Say your name and where you are from", "Describe what you did today", "Talk about your family"],
+          "difficulty_level": "entry",
+          "subtitles_enabled": true,
+          "ai_coach_mode": "maximum_encouragement_no_correction",
+          "weekly_assessment": false,
+          "note": "No assessment. Week 1 is entirely about removing fear of speaking."
+        },
+        "week_2": {
+          "days": "8 to 14",
+          "theme": "Simple daily conversations",
+          "scenario_focus": "Everyday situations",
+          "scenario_examples": ["At a shop", "Asking for directions", "Talking about the weather", "Simple phone conversation"],
+          "difficulty_level": "entry",
+          "subtitles_enabled": true,
+          "ai_coach_mode": "encouraging_with_gentle_modeling",
+          "weekly_assessment": {
+            "day": 14,
+            "duration_minutes": 15,
+            "spoken_task": "1.5 min response: Tell me about your typical morning",
+            "written_questions": 5,
+            "listening_clip": true,
+            "dimensions_scored": ["speaking_fluency", "vocabulary_range", "pronunciation_clarity", "listening_comprehension", "confidence_score"],
+            "result_action": "AI adjusts vocabulary difficulty and conversation length for next week"
+          }
+        },
+        "week_3": {
+          "days": "15 to 21",
+          "theme": "Describing things and people",
+          "scenario_focus": "Descriptive language",
+          "scenario_examples": ["Describe your home", "Describe a person you know", "Describe a place you like"],
+          "difficulty_level": "entry_plus",
+          "subtitles_enabled": true,
+          "ai_coach_mode": "encouraging_with_gentle_modeling",
+          "weekly_assessment": {
+            "day": 21,
+            "duration_minutes": 15,
+            "spoken_task": "2 min response: Describe someone you know well",
+            "written_questions": 5,
+            "listening_clip": true,
+            "dimensions_scored": ["speaking_fluency", "vocabulary_range", "pronunciation_clarity", "listening_comprehension", "confidence_score"],
+            "result_action": "Track filler word reduction vs Week 2"
+          }
+        },
+        "week_4": {
+          "days": "22 to 28",
+          "theme": "Talking about past and future",
+          "scenario_focus": "Basic tense usage through storytelling",
+          "scenario_examples": ["What did you do last weekend", "What are your plans for next week", "Tell me about a happy memory"],
+          "difficulty_level": "entry_plus",
+          "subtitles_enabled": false,
+          "ai_coach_mode": "narrative_encouragement",
+          "weekly_assessment": {
+            "day": 28,
+            "duration_minutes": 15,
+            "spoken_task": "2 min: Tell me about something that happened to you recently",
+            "written_questions": 5,
+            "listening_clip": true,
+            "dimensions_scored": ["speaking_fluency", "vocabulary_range", "pronunciation_clarity", "listening_comprehension", "confidence_score"]
+          }
+        },
+        "week_5": {
+          "days": "29 to 35",
+          "theme": "Expressing opinions and preferences",
+          "scenario_focus": "Sharing personal views",
+          "scenario_examples": ["What kind of food do you like and why", "What is your favourite way to spend time", "Do you prefer mornings or evenings"],
+          "difficulty_level": "basic_expression",
+          "ai_coach_mode": "opinion_expression_coaching",
+          "weekly_assessment": {
+            "day": 35,
+            "duration_minutes": 15,
+            "spoken_task": "2 min: What is something you feel strongly about and why",
+            "written_questions": 5,
+            "listening_clip": true,
+            "dimensions_scored": ["speaking_fluency", "vocabulary_range", "pronunciation_clarity", "listening_comprehension", "confidence_score"]
+          }
+        },
+        "week_6": {
+          "days": "36 to 42",
+          "theme": "Simple workplace English begins",
+          "scenario_focus": "Basic professional situations",
+          "scenario_examples": ["Introduce yourself to a new colleague", "Say good morning and make small talk", "Ask a simple question in a meeting"],
+          "difficulty_level": "basic_professional",
+          "ai_coach_mode": "professional_entry_encouragement",
+          "weekly_assessment": {
+            "day": 42,
+            "duration_minutes": 15,
+            "spoken_task": "2 min: Introduce yourself as if meeting a new colleague",
+            "written_questions": 5,
+            "listening_clip": true,
+            "dimensions_scored": ["speaking_fluency", "vocabulary_range", "pronunciation_clarity", "listening_comprehension", "confidence_score"]
+          }
+        },
+        "week_7": {
+          "days": "43 to 49",
+          "theme": "Asking and answering work questions",
+          "scenario_focus": "Functional workplace communication",
+          "scenario_examples": ["Explain what your job involves", "Ask a colleague for help", "Respond to a simple task request"],
+          "difficulty_level": "basic_professional",
+          "ai_coach_mode": "functional_clarity_coaching",
+          "weekly_assessment": {
+            "day": 49,
+            "duration_minutes": 15,
+            "spoken_task": "2.5 min: Explain what you do at work to someone who does not know your field",
+            "written_questions": 5,
+            "listening_clip": true,
+            "dimensions_scored": ["speaking_fluency", "vocabulary_range", "pronunciation_clarity", "listening_comprehension", "confidence_score"]
+          }
+        },
+        "week_8": {
+          "days": "50 to 56",
+          "theme": "Short presentations and structured speaking",
+          "scenario_focus": "Saying things in order",
+          "scenario_examples": ["Explain a process step by step", "Give a 2 min talk on a topic you know", "Summarise something you read or watched"],
+          "difficulty_level": "intermediate_entry",
+          "ai_coach_mode": "structure_guidance",
+          "weekly_assessment": {
+            "day": 56,
+            "duration_minutes": 15,
+            "spoken_task": "3 min: Give a short talk on a topic of your choice",
+            "written_questions": 5,
+            "listening_clip": true,
+            "dimensions_scored": ["speaking_fluency", "vocabulary_range", "pronunciation_clarity", "listening_comprehension", "confidence_score"]
+          }
+        },
+        "week_9": {
+          "days": "57 to 63",
+          "theme": "Handling simple pressure situations",
+          "scenario_focus": "Responding when you are not sure",
+          "scenario_examples": ["What do you say when you do not understand", "How to ask someone to repeat", "How to buy time before answering"],
+          "difficulty_level": "intermediate_entry",
+          "ai_coach_mode": "composure_and_recovery_coaching",
+          "weekly_assessment": {
+            "day": 63,
+            "duration_minutes": 15,
+            "spoken_task": "3 min: AI asks unexpected questions. Learner responds without preparation.",
+            "written_questions": 5,
+            "listening_clip": true,
+            "dimensions_scored": ["speaking_fluency", "vocabulary_range", "pronunciation_clarity", "listening_comprehension", "confidence_score"]
+          }
+        },
+        "week_10": {
+          "days": "64 to 70",
+          "theme": "Consolidation — AI gap fill based on 9 weeks",
+          "scenario_focus": "Weakest 2-3 dimensions from assessment history",
+          "note": "AI reviews all 9 weekly scores. Re-runs scenarios targeting the lowest scoring dimensions with fresh examples.",
+          "difficulty_level": "adaptive",
+          "ai_coach_mode": "targeted_re_exposure",
+          "weekly_assessment": {
+            "day": 70,
+            "duration_minutes": 15,
+            "spoken_task": "3 min on a topic AI selects from your weakest scenario area",
+            "written_questions": 5,
+            "listening_clip": true,
+            "dimensions_scored": ["speaking_fluency", "vocabulary_range", "pronunciation_clarity", "listening_comprehension", "confidence_score"]
+          }
+        },
+        "week_11": {
+          "days": "71 to 77",
+          "theme": "Mixed real-life and work scenarios",
+          "scenario_focus": "Switching between personal and professional",
+          "scenario_examples": ["Casual conversation then work topic", "Explain a personal situation in a professional context"],
+          "difficulty_level": "intermediate",
+          "ai_coach_mode": "register_awareness",
+          "weekly_assessment": {
+            "day": 77,
+            "duration_minutes": 15,
+            "spoken_task": "3 min: Mixed scenario — AI leads across two different contexts",
+            "written_questions": 5,
+            "listening_clip": true,
+            "dimensions_scored": ["speaking_fluency", "vocabulary_range", "pronunciation_clarity", "listening_comprehension", "confidence_score"]
+          }
+        },
+        "week_12": {
+          "days": "78 to 84",
+          "theme": "Speak without a script — independence",
+          "scenario_focus": "Unscripted conversations",
+          "note": "AI gives minimal prompts. Learner must sustain conversation for 4-5 minutes alone.",
+          "difficulty_level": "near_final",
+          "ai_coach_mode": "minimal_scaffolding",
+          "weekly_assessment": {
+            "day": 84,
+            "duration_minutes": 15,
+            "spoken_task": "3 min open conversation — AI only asks one opening question",
+            "written_questions": 5,
+            "listening_clip": true,
+            "dimensions_scored": ["speaking_fluency", "vocabulary_range", "pronunciation_clarity", "listening_comprehension", "confidence_score"]
+          }
+        },
+        "week_13_prep": {
+          "days": "85 to 89",
+          "theme": "Final preparation",
+          "activities": ["Revisit favourite scenarios", "Light vocabulary review", "One full mock final on Day 88"],
+          "weekly_assessment": false
+        }
+      },
+
+      "final_assessment": {
+        "day": 90,
+        "tasks": [
+          { "name": "Simple presentation", "description": "3 min talk on a topic given by AI on the day", "duration_minutes": 10 },
+          { "name": "AI-led dialogue", "description": "5 min conversation on a personal or basic professional topic", "duration_minutes": 12 },
+          { "name": "Written task", "description": "Write a short paragraph or simple email (80 words)", "duration_minutes": 8 }
+        ],
+        "scorecard_vs_day_0": true
+      }
+    },
+
+    "intermediate": {
+      "band": "intermediate",
+      "score_range": "41 to 70",
+      "description": "Learner can communicate in everyday situations but struggles with professional contexts, complex sentence formation, and speaking under pressure. Primary goal is workplace readiness and fluency under pressure.",
+      "total_days": 90,
+
+      "daily_structure": {
+        "applies_to_days": "2 to 89",
+        "total_duration_minutes": { "min": 40, "max": 55 },
+        "blocks": {
+          "absorb_block": {
+            "order": 1,
+            "duration_minutes": 15,
+            "items": [
+              {
+                "name": "Watch clip",
+                "description": "4-5 min professional or semi-professional English video. Subtitles off by default.",
+                "duration_minutes": 5
+              },
+              {
+                "name": "Listen to podcast",
+                "description": "8-10 min podcast on workplace, current events, or professional topics",
+                "duration_minutes": 8
+              },
+              {
+                "name": "Vocabulary in context",
+                "description": "5 professional or contextual words in realistic sentences. No standalone definitions.",
+                "count": 5,
+                "duration_minutes": 2
+              }
+            ]
+          },
+          "speak_block": {
+            "order": 2,
+            "duration_minutes": 25,
+            "items": [
+              {
+                "name": "AI conversation sessions",
+                "count": "2 to 3",
+                "description": "Professional scenario conversations aligned to week theme. Voice preferred.",
+                "duration_minutes": 15,
+                "coaching_rule": "AI suggests better expressions after learner finishes a turn. Never interrupts. Models professional phrasing."
+              },
+              {
+                "name": "Scenario role play",
+                "count": 1,
+                "description": "Unscripted professional situation. Learner must respond in real time.",
+                "duration_minutes": 7
+              },
+              {
+                "name": "Extempore speaking",
+                "count": 1,
+                "description": "Random professional topic. 2-3 minutes. Builds spontaneous professional expression.",
+                "duration_minutes": 3,
+                "ai_tracks": ["filler_words", "hesitation_patterns", "vocabulary_sophistication", "response_length"]
+              }
+            ]
+          },
+          "reinforce_block": {
+            "order": 3,
+            "duration_minutes": 15,
+            "rule": "Pattern recognition through professional examples. No grammar theory.",
+            "exercise_count": 5,
+            "exercise_types": [
+              { "type": "grammar_pattern", "description": "Error correction in professional writing samples", "format": ["mcq", "fill_in_blank"] },
+              { "type": "vocabulary_usage", "description": "Use today's 5 words in professional sentences", "format": ["mcq", "short_answer"] },
+              { "type": "reading_comprehension", "description": "100-150 word professional passage + 3 questions", "format": ["mcq"] },
+              { "type": "writing", "description": "Write a short email or professional message (60-80 words)", "format": ["short_answer"] },
+              { "type": "listening", "description": "Professional audio clip + comprehension questions", "format": ["mcq", "fill_in_blank"] }
+            ],
+            "feedback_rule": "Show correct answer with explanation and a professional example. Frame it as a better way, not a wrong answer."
+          }
+        }
+      },
+
+      "weekly_plan": {
+        "week_1": {
+          "days": "1 to 7",
+          "theme": "Reactivation — speak freely without pressure",
+          "scenario_focus": "Everyday and semi-professional conversations",
+          "scenario_examples": ["Describe your work to someone new", "Talk about a recent experience", "Express an opinion on a topic"],
+          "difficulty_level": "intermediate_entry",
+          "ai_coach_mode": "encouraging_with_modeling",
+          "weekly_assessment": false,
+          "note": "Week 1 reactivates speaking habit. No assessment pressure."
+        },
+        "week_2": {
+          "days": "8 to 14",
+          "theme": "Workplace communication basics",
+          "scenario_focus": "Office and team interactions",
+          "scenario_examples": ["Give a team standup update", "Explain a task to a colleague", "Respond to feedback politely"],
+          "difficulty_level": "intermediate",
+          "new_feature_activated": "filler_word_detection",
+          "filler_words_tracked": ["Ahh", "Umm", "Like", "You know", "Basically", "Kind of"],
+          "ai_coach_mode": "professional_clarity_coaching",
+          "weekly_assessment": {
+            "day": 14,
+            "duration_minutes": 20,
+            "spoken_task": "3 min: Give your team a brief update on a project you are working on",
+            "written_questions": 5,
+            "listening_clip": true,
+            "dimensions_scored": ["speaking_fluency", "vocabulary_range", "pronunciation_clarity", "listening_comprehension", "confidence_score"],
+            "result_action": "AI sets baseline for professional fluency and adjusts weekly scenario difficulty"
+          }
+        },
+        "week_3": {
+          "days": "15 to 21",
+          "theme": "Client communication",
+          "scenario_focus": "Professional articulation with clients",
+          "scenario_examples": ["Project status update to a client", "Handle a client question you are not fully sure about", "Follow up after a meeting via message"],
+          "difficulty_level": "intermediate",
+          "ai_coach_mode": "professional_tone_and_vocabulary",
+          "weekly_assessment": {
+            "day": 21,
+            "duration_minutes": 20,
+            "spoken_task": "3 min: A client asks why there is a delay. Handle it professionally.",
+            "written_questions": 5,
+            "listening_clip": true,
+            "dimensions_scored": ["speaking_fluency", "vocabulary_range", "pronunciation_clarity", "listening_comprehension", "confidence_score"]
+          }
+        },
+        "week_4": {
+          "days": "22 to 28",
+          "theme": "Expressing ideas and opinions professionally",
+          "scenario_focus": "Sharing perspectives in work contexts",
+          "scenario_examples": ["Suggest an idea in a meeting", "Politely disagree with a colleague", "Support a point with a reason and example"],
+          "difficulty_level": "intermediate",
+          "ai_coach_mode": "assertiveness_and_clarity",
+          "weekly_assessment": {
+            "day": 28,
+            "duration_minutes": 20,
+            "spoken_task": "3 min: You disagree with a decision in a meeting. Express your view professionally.",
+            "written_questions": 5,
+            "listening_clip": true,
+            "dimensions_scored": ["speaking_fluency", "vocabulary_range", "pronunciation_clarity", "listening_comprehension", "confidence_score"]
+          }
+        },
+        "week_5": {
+          "days": "29 to 35",
+          "theme": "Storytelling and structured narrative",
+          "scenario_focus": "Explaining situations with logical flow",
+          "scenario_examples": ["Describe a challenge you solved at work", "Walk through a decision you made", "Explain a past project to a new colleague"],
+          "difficulty_level": "intermediate_plus",
+          "ai_tracks_additionally": ["sentence_cohesion", "logical_flow", "connector_word_usage"],
+          "ai_coach_mode": "narrative_structure_coaching",
+          "weekly_assessment": {
+            "day": 35,
+            "duration_minutes": 20,
+            "spoken_task": "3 min: Tell me about a time you had to solve a difficult problem at work",
+            "written_questions": 5,
+            "listening_clip": true,
+            "dimensions_scored": ["speaking_fluency", "vocabulary_range", "pronunciation_clarity", "listening_comprehension", "confidence_score"]
+          }
+        },
+        "week_6": {
+          "days": "36 to 42",
+          "theme": "Handling pressure and difficult questions",
+          "scenario_focus": "Being put on the spot",
+          "scenario_examples": ["Walk me through your thinking", "Can you clarify that further", "What would you have done differently"],
+          "difficulty_level": "intermediate_plus",
+          "ai_coach_mode": "composure_and_spontaneity",
+          "weekly_assessment": {
+            "day": 42,
+            "duration_minutes": 20,
+            "spoken_task": "3 min: AI asks 3 unexpected follow-up questions. Respond without preparation.",
+            "written_questions": 5,
+            "listening_clip": true,
+            "dimensions_scored": ["speaking_fluency", "vocabulary_range", "pronunciation_clarity", "listening_comprehension", "confidence_score"]
+          }
+        },
+        "week_7": {
+          "days": "43 to 49",
+          "theme": "Presentations and structured speaking",
+          "scenario_focus": "Public speaking fundamentals",
+          "scenario_examples": ["Open a 5 min presentation confidently", "Structure 3 key points", "Close with a clear summary", "Handle 1-2 audience questions"],
+          "difficulty_level": "intermediate_plus",
+          "ai_tracks_additionally": ["opening_strength", "structure_clarity", "pacing", "closing_confidence"],
+          "ai_coach_mode": "delivery_and_structure",
+          "weekly_assessment": {
+            "day": 49,
+            "duration_minutes": 20,
+            "spoken_task": "4 min: Give a short presentation on a topic AI provides on the day",
+            "written_questions": 5,
+            "listening_clip": true,
+            "dimensions_scored": ["speaking_fluency", "vocabulary_range", "pronunciation_clarity", "listening_comprehension", "confidence_score"]
+          }
+        },
+        "week_8": {
+          "days": "50 to 56",
+          "theme": "Networking and informal professional English",
+          "scenario_focus": "Spontaneous professional small talk",
+          "scenario_examples": ["Start a conversation with someone new at a work event", "Small talk before a meeting", "Build rapport with a client before getting to business"],
+          "difficulty_level": "upper_intermediate",
+          "ai_coach_mode": "naturalness_and_register",
+          "weekly_assessment": {
+            "day": 56,
+            "duration_minutes": 20,
+            "spoken_task": "3 min: You are at a professional event. Start and sustain a conversation.",
+            "written_questions": 5,
+            "listening_clip": true,
+            "dimensions_scored": ["speaking_fluency", "vocabulary_range", "pronunciation_clarity", "listening_comprehension", "confidence_score"]
+          }
+        },
+        "week_9": {
+          "days": "57 to 63",
+          "theme": "Mixed scenario simulation",
+          "scenario_focus": "Register switching — formal to informal and back",
+          "scenario_examples": ["Client call then team debrief then casual conversation in sequence", "Switch from formal presentation to relaxed Q&A"],
+          "difficulty_level": "upper_intermediate",
+          "ai_coach_mode": "adaptability_coaching",
+          "weekly_assessment": {
+            "day": 63,
+            "duration_minutes": 20,
+            "spoken_task": "4 min: AI leads you through two different scenario types back to back",
+            "written_questions": 5,
+            "listening_clip": true,
+            "dimensions_scored": ["speaking_fluency", "vocabulary_range", "pronunciation_clarity", "listening_comprehension", "confidence_score"]
+          }
+        },
+        "week_10": {
+          "days": "64 to 70",
+          "theme": "Consolidation — AI-targeted gap fill",
+          "note": "AI reviews 9 weekly scores. Identifies 2-3 weakest dimensions. Re-runs professional scenarios targeting those gaps.",
+          "difficulty_level": "adaptive",
+          "ai_coach_mode": "targeted_re_exposure",
+          "weekly_assessment": {
+            "day": 70,
+            "duration_minutes": 20,
+            "spoken_task": "3 min on the scenario area with lowest score history",
+            "written_questions": 5,
+            "listening_clip": true,
+            "dimensions_scored": ["speaking_fluency", "vocabulary_range", "pronunciation_clarity", "listening_comprehension", "confidence_score"]
+          }
+        },
+        "week_11": {
+          "days": "71 to 77",
+          "theme": "High-stakes simulations",
+          "scenario_focus": "Near-final difficulty",
+          "scenario_examples": ["Mock client interview", "Panel presentation with Q&A", "Escalated workplace discussion", "Performance review conversation"],
+          "difficulty_level": "near_final",
+          "ai_coach_mode": "peak_readiness",
+          "weekly_assessment": {
+            "day": 77,
+            "duration_minutes": 20,
+            "spoken_task": "4 min: High-stakes mock scenario selected by AI",
+            "written_questions": 5,
+            "listening_clip": true,
+            "dimensions_scored": ["speaking_fluency", "vocabulary_range", "pronunciation_clarity", "listening_comprehension", "confidence_score"]
+          }
+        },
+        "week_12": {
+          "days": "78 to 84",
+          "theme": "Speak without a net — independent expression",
+          "note": "AI gives minimal prompts. Learner sustains 5-7 minute conversation without scaffolding.",
+          "difficulty_level": "final_equivalent",
+          "ai_coach_mode": "minimal_scaffolding",
+          "weekly_assessment": {
+            "day": 84,
+            "duration_minutes": 20,
+            "spoken_task": "4 min: Open conversation — AI asks one question then listens",
+            "written_questions": 5,
+            "listening_clip": true,
+            "dimensions_scored": ["speaking_fluency", "vocabulary_range", "pronunciation_clarity", "listening_comprehension", "confidence_score"]
+          }
+        },
+        "week_13_prep": {
+          "days": "85 to 89",
+          "theme": "Final preparation",
+          "activities": ["Revisit top scenarios", "Vocabulary review across all 12 weeks", "Full mock final on Day 88"],
+          "weekly_assessment": false
+        }
+      },
+
+      "final_assessment": {
+        "day": 90,
+        "tasks": [
+          { "name": "Professional presentation", "description": "4-5 min structured talk on a professional topic given by AI", "duration_minutes": 12 },
+          { "name": "AI-led dialogue", "description": "5-7 min conversation simulating a client call or professional interview", "duration_minutes": 15 },
+          { "name": "Written task", "description": "Short professional email or paragraph (100 words)", "duration_minutes": 8 }
+        ],
+        "scorecard_vs_day_0": true
+      }
+    },
+
+    "advanced": {
+      "band": "advanced",
+      "score_range": "71 to 100",
+      "description": "Learner communicates comfortably in everyday and standard professional situations but needs refinement in high-stakes contexts — presentations, client negotiations, leadership communication, and nuanced expression. Primary goal is polished, high-impact professional English.",
+      "total_days": 90,
+
+      "daily_structure": {
+        "applies_to_days": "2 to 89",
+        "total_duration_minutes": { "min": 40, "max": 55 },
+        "blocks": {
+          "absorb_block": {
+            "order": 1,
+            "duration_minutes": 15,
+            "items": [
+              {
+                "name": "Watch clip",
+                "description": "5 min high-quality professional content — TED talks, interviews, business presentations. No subtitles.",
+                "duration_minutes": 5
+              },
+              {
+                "name": "Listen to podcast",
+                "description": "10 min advanced professional or thought-leadership podcast",
+                "duration_minutes": 8
+              },
+              {
+                "name": "Vocabulary in context",
+                "description": "5 advanced or nuanced words — idioms, phrasal verbs, sophisticated professional vocabulary in real usage",
+                "count": 5,
+                "duration_minutes": 2
+              }
+            ]
+          },
+          "speak_block": {
+            "order": 2,
+            "duration_minutes": 28,
+            "items": [
+              {
+                "name": "AI conversation sessions",
+                "count": "2 to 3",
+                "description": "High-stakes professional scenarios — negotiations, presentations, leadership discussions. Pushes vocabulary sophistication and composure.",
+                "duration_minutes": 15,
+                "coaching_rule": "AI challenges learner to be more precise, impactful, and nuanced. Models executive-level phrasing."
+              },
+              {
+                "name": "High-stakes role play",
+                "count": 1,
+                "description": "Challenging unscripted scenario — client pushback, unexpected question, escalated discussion",
+                "duration_minutes": 10
+              },
+              {
+                "name": "Extempore speaking",
+                "count": 1,
+                "description": "Complex professional topic. 3 minutes. No preparation. Builds executive-level spontaneous expression.",
+                "duration_minutes": 3,
+                "ai_tracks": ["filler_words", "vocabulary_sophistication", "argument_structure", "impact_of_opening_line", "pacing"]
+              }
+            ]
+          },
+          "reinforce_block": {
+            "order": 3,
+            "duration_minutes": 12,
+            "rule": "Advanced usage patterns. Focus on nuance, precision, and register-appropriate vocabulary.",
+            "exercise_count": 5,
+            "exercise_types": [
+              { "type": "advanced_sentence_refinement", "description": "Rewrite a sentence to be more precise or impactful", "format": ["short_answer"] },
+              { "type": "vocabulary_nuance", "description": "Choose the most precise word among near-synonyms in professional context", "format": ["mcq"] },
+              { "type": "reading_comprehension", "description": "150-200 word professional or analytical passage + 3 questions", "format": ["mcq", "short_answer"] },
+              { "type": "writing", "description": "Write a professional email, proposal intro, or executive summary (80-100 words)", "format": ["short_answer"] },
+              { "type": "listening", "description": "Fast-paced professional audio + inference questions", "format": ["mcq", "short_answer"] }
+            ],
+            "feedback_rule": "AI explains the more impactful or precise alternative. Always frames as a craft improvement, not a correction."
+          }
+        }
+      },
+
+      "weekly_plan": {
+        "week_1": {
+          "days": "1 to 7",
+          "theme": "Calibration — identify exact polish gaps",
+          "scenario_focus": "High-quality professional and leadership conversations",
+          "scenario_examples": ["Introduce yourself at a leadership meeting", "Summarise a complex project to a senior stakeholder", "Express a strategic opinion with evidence"],
+          "difficulty_level": "upper_intermediate",
+          "ai_coach_mode": "precision_and_impact_coaching",
+          "weekly_assessment": false,
+          "note": "Week 1 calibrates the specific gaps. AI identifies vocabulary ceiling, filler patterns, and composure under complexity."
+        },
+        "week_2": {
+          "days": "8 to 14",
+          "theme": "Stakeholder communication",
+          "scenario_focus": "Communicating with senior stakeholders",
+          "scenario_examples": ["Present a business update to senior leadership", "Answer a challenging question from a stakeholder", "Explain a risk or concern clearly and calmly"],
+          "difficulty_level": "upper_intermediate",
+          "ai_coach_mode": "executive_communication_coaching",
+          "filler_words_tracked": ["Basically", "Kind of", "Sort of", "Like", "You know what I mean"],
+          "weekly_assessment": {
+            "day": 14,
+            "duration_minutes": 20,
+            "spoken_task": "4 min: Present a business update to a senior leader and answer 2 follow-up questions",
+            "written_questions": 5,
+            "listening_clip": true,
+            "dimensions_scored": ["speaking_fluency", "vocabulary_range", "pronunciation_clarity", "listening_comprehension", "confidence_score"],
+            "result_action": "AI identifies specific vocabulary and phrasing gaps at executive level and adjusts content library"
+          }
+        },
+        "week_3": {
+          "days": "15 to 21",
+          "theme": "Negotiation and influence",
+          "scenario_focus": "Persuasive and diplomatic professional English",
+          "scenario_examples": ["Negotiate a timeline with a client", "Convince a team to adopt your idea", "Handle pushback gracefully while holding your position"],
+          "difficulty_level": "advanced",
+          "ai_coach_mode": "persuasion_and_diplomacy_coaching",
+          "weekly_assessment": {
+            "day": 21,
+            "duration_minutes": 20,
+            "spoken_task": "4 min: A client pushes back on your proposal. Respond diplomatically and hold your position.",
+            "written_questions": 5,
+            "listening_clip": true,
+            "dimensions_scored": ["speaking_fluency", "vocabulary_range", "pronunciation_clarity", "listening_comprehension", "confidence_score"]
+          }
+        },
+        "week_4": {
+          "days": "22 to 28",
+          "theme": "Presenting with authority",
+          "scenario_focus": "High-impact structured presentations",
+          "scenario_examples": ["Open a presentation with a hook", "Handle a difficult audience question", "Close with a memorable call to action", "Respond to interruptions gracefully"],
+          "difficulty_level": "advanced",
+          "ai_tracks_additionally": ["opening_hook_impact", "argument_flow", "authority_in_delivery", "Q&A_composure"],
+          "ai_coach_mode": "executive_presence_coaching",
+          "weekly_assessment": {
+            "day": 28,
+            "duration_minutes": 20,
+            "spoken_task": "5 min: Full structured presentation on a topic given by AI on the day with Q&A",
+            "written_questions": 5,
+            "listening_clip": true,
+            "dimensions_scored": ["speaking_fluency", "vocabulary_range", "pronunciation_clarity", "listening_comprehension", "confidence_score"]
+          }
+        },
+        "week_5": {
+          "days": "29 to 35",
+          "theme": "Complex storytelling and thought leadership",
+          "scenario_focus": "Narrative that persuades and inspires",
+          "scenario_examples": ["Tell a story that makes a business case", "Describe a failure and what you learned — professionally", "Articulate a vision to your team"],
+          "difficulty_level": "advanced",
+          "ai_coach_mode": "narrative_impact_coaching",
+          "weekly_assessment": {
+            "day": 35,
+            "duration_minutes": 20,
+            "spoken_task": "4 min: Tell a story about a significant professional challenge and what it taught you",
+            "written_questions": 5,
+            "listening_clip": true,
+            "dimensions_scored": ["speaking_fluency", "vocabulary_range", "pronunciation_clarity", "listening_comprehension", "confidence_score"]
+          }
+        },
+        "week_6": {
+          "days": "36 to 42",
+          "theme": "Crisis and difficult conversations",
+          "scenario_focus": "High-pressure professional situations",
+          "scenario_examples": ["Deliver bad news to a client professionally", "Manage an escalated complaint", "Address a misunderstanding in a meeting", "Respond to an aggressive question calmly"],
+          "difficulty_level": "advanced_plus",
+          "ai_coach_mode": "composure_under_fire",
+          "weekly_assessment": {
+            "day": 42,
+            "duration_minutes": 20,
+            "spoken_task": "4 min: AI plays a frustrated client. Handle the situation calmly and professionally.",
+            "written_questions": 5,
+            "listening_clip": true,
+            "dimensions_scored": ["speaking_fluency", "vocabulary_range", "pronunciation_clarity", "listening_comprehension", "confidence_score"]
+          }
+        },
+        "week_7": {
+          "days": "43 to 49",
+          "theme": "Cross-cultural and global professional English",
+          "scenario_focus": "Communication across contexts and cultures",
+          "scenario_examples": ["Adjust your communication style for a formal vs informal international client", "Ask for clarification without seeming uninformed", "Navigate ambiguity in a professional conversation"],
+          "difficulty_level": "advanced_plus",
+          "ai_coach_mode": "global_communication_coaching",
+          "weekly_assessment": {
+            "day": 49,
+            "duration_minutes": 20,
+            "spoken_task": "4 min: International client scenario — AI plays a stakeholder from a different cultural context",
+            "written_questions": 5,
+            "listening_clip": true,
+            "dimensions_scored": ["speaking_fluency", "vocabulary_range", "pronunciation_clarity", "listening_comprehension", "confidence_score"]
+          }
+        },
+        "week_8": {
+          "days": "50 to 56",
+          "theme": "Leadership communication",
+          "scenario_focus": "Inspiring, directing, and aligning teams",
+          "scenario_examples": ["Give feedback to a team member constructively", "Align a team around a difficult decision", "Motivate a team before a challenging project"],
+          "difficulty_level": "advanced_plus",
+          "ai_coach_mode": "leadership_language_coaching",
+          "weekly_assessment": {
+            "day": 56,
+            "duration_minutes": 20,
+            "spoken_task": "4 min: Give constructive feedback to a team member who missed a deadline",
+            "written_questions": 5,
+            "listening_clip": true,
+            "dimensions_scored": ["speaking_fluency", "vocabulary_range", "pronunciation_clarity", "listening_comprehension", "confidence_score"]
+          }
+        },
+        "week_9": {
+          "days": "57 to 63",
+          "theme": "Rapid register switching — full professional range",
+          "scenario_focus": "Moving fluently across all professional registers",
+          "scenario_examples": ["Board-level update → client meeting → team huddle in one session", "Adjust formality in real time based on audience response"],
+          "difficulty_level": "mastery",
+          "ai_coach_mode": "full_range_fluency",
+          "weekly_assessment": {
+            "day": 63,
+            "duration_minutes": 20,
+            "spoken_task": "5 min: AI moves you across 3 different professional scenarios without warning",
+            "written_questions": 5,
+            "listening_clip": true,
+            "dimensions_scored": ["speaking_fluency", "vocabulary_range", "pronunciation_clarity", "listening_comprehension", "confidence_score"]
+          }
+        },
+        "week_10": {
+          "days": "64 to 70",
+          "theme": "Consolidation — precision and vocabulary elevation",
+          "note": "AI reviews 9 weekly scores. Identifies vocabulary ceiling and specific phrasing patterns that are limiting impact. Runs targeted elevation sessions.",
+          "difficulty_level": "adaptive_advanced",
+          "ai_coach_mode": "vocabulary_elevation_and_precision",
+          "weekly_assessment": {
+            "day": 70,
+            "duration_minutes": 20,
+            "spoken_task": "4 min in the scenario area with the lowest score history",
+            "written_questions": 5,
+            "listening_clip": true,
+            "dimensions_scored": ["speaking_fluency", "vocabulary_range", "pronunciation_clarity", "listening_comprehension", "confidence_score"]
+          }
+        },
+        "week_11": {
+          "days": "71 to 77",
+          "theme": "Final stretch — elite-level simulations",
+          "scenario_focus": "Most demanding professional scenarios",
+          "scenario_examples": ["Board-level presentation", "Multi-stakeholder negotiation", "Live Q&A after a complex presentation", "Executive interview"],
+          "difficulty_level": "elite",
+          "ai_coach_mode": "executive_level_pressure",
+          "weekly_assessment": {
+            "day": 77,
+            "duration_minutes": 20,
+            "spoken_task": "5 min: Most demanding scenario from the full 11-week scenario library",
+            "written_questions": 5,
+            "listening_clip": true,
+            "dimensions_scored": ["speaking_fluency", "vocabulary_range", "pronunciation_clarity", "listening_comprehension", "confidence_score"]
+          }
+        },
+        "week_12": {
+          "days": "78 to 84",
+          "theme": "Mastery expression — no scaffolding",
+          "note": "AI gives one opening context. Learner drives the entire 6-7 minute conversation. Tests full independent command.",
+          "difficulty_level": "final_equivalent",
+          "ai_coach_mode": "observer_only",
+          "weekly_assessment": {
+            "day": 84,
+            "duration_minutes": 20,
+            "spoken_task": "5 min: AI sets a context. Learner takes full ownership of the conversation.",
+            "written_questions": 5,
+            "listening_clip": true,
+            "dimensions_scored": ["speaking_fluency", "vocabulary_range", "pronunciation_clarity", "listening_comprehension", "confidence_score"]
+          }
+        },
+        "week_13_prep": {
+          "days": "85 to 89",
+          "theme": "Final preparation",
+          "activities": ["Revisit highest-impact scenarios", "Advanced vocabulary and idiom review", "Full mock final on Day 88"],
+          "weekly_assessment": false
+        }
+      },
+
+      "final_assessment": {
+        "day": 90,
+        "tasks": [
+          { "name": "Executive presentation", "description": "5 min structured talk on a complex professional topic given by AI on the day, followed by 2 min Q&A", "duration_minutes": 15 },
+          { "name": "AI-led high-stakes dialogue", "description": "7 min conversation simulating a client negotiation or executive interview", "duration_minutes": 15 },
+          { "name": "Written task", "description": "Professional email or executive summary (100-120 words)", "duration_minutes": 10 }
+        ],
+        "scorecard_vs_day_0": true
+      }
+    }
+  },
+
+  "universal_assessment_rules": {
+    "weekly_assessment_days": [14, 21, 28, 35, 42, 49, 56, 63, 70, 77, 84],
+    "final_assessment_day": 90,
+    "five_dimensions": {
+      "speaking_fluency": { "measures": ["pace", "pausing", "filler_word_count", "response_length"] },
+      "vocabulary_range": { "measures": ["word_variety", "contextual_accuracy", "new_words_used"] },
+      "pronunciation_clarity": { "measures": ["phonetic_accuracy", "intelligibility"], "note": "Accent is never scored. Only clarity." },
+      "listening_comprehension": { "measures": ["accuracy_of_answers", "response_speed"] },
+      "confidence_score": { "measures": ["filler_reduction_vs_last_week", "response_length_trend", "hesitation_frequency"] }
+    },
+    "post_assessment_actions": {
+      "score_above_80": "Increase difficulty. Introduce next scenario tier.",
+      "score_50_to_80": "Continue current level with variation.",
+      "score_below_50": "Repeat scenario theme with fresh examples. Notify admin.",
+      "any_declining_dimension": "Re-weight next week toward that dimension. Notify admin."
+    },
+    "coaching_rule_universal": "Never correct during conversation. Always suggest better expression after the learner finishes their turn.",
+    "scorecard_vs_day_0": true
+  }
+}

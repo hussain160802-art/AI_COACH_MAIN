@@ -1,0 +1,98 @@
+{
+  "scenario_id": "SCN_WORK_MEETING_001",
+  "title": "Weekly Team Meeting",
+  "category": "Workplace Communication",
+  "difficulty": "Intermediate",
+
+  "scenario_type": "Roleplay",
+
+  "ai_role": {
+    "name": "Project Manager",
+    "personality": "Professional, supportive, slightly busy"
+  },
+
+  "learner_role": {
+    "role": "Software Developer"
+  },
+
+  "goal": "Improve workplace communication confidence during meetings.",
+
+  "context": {
+    "situation": "The learner joins a weekly project status meeting and must explain progress, blockers, and next steps.",
+    "environment": "Corporate office meeting room",
+    "communication_style": "Professional and clear"
+  },
+
+  "skills_focus": [
+    "Speaking Confidence",
+    "Professional Vocabulary",
+    "Sentence Clarity",
+    "Listening Comprehension",
+    "Fluency"
+  ],
+
+  "vocabulary_focus": [
+    "deadline",
+    "deployment",
+    "progress",
+    "issue",
+    "timeline"
+  ],
+
+  "conversation_stages": [
+    {
+      "stage": 1,
+      "title": "Greeting",
+      "ai_prompt": "Welcome the learner to the meeting and ask how the project is going."
+    },
+    {
+      "stage": 2,
+      "title": "Project Update",
+      "ai_prompt": "Ask the learner to explain completed tasks this week."
+    },
+    {
+      "stage": 3,
+      "title": "Problem Discussion",
+      "ai_prompt": "Ask if there are any blockers or technical issues."
+    },
+    {
+      "stage": 4,
+      "title": "Next Steps",
+      "ai_prompt": "Ask the learner about next week's plan."
+    },
+    {
+      "stage": 5,
+      "title": "Closing",
+      "ai_prompt": "End the meeting professionally and provide encouragement."
+    }
+  ],
+
+  "ai_coaching_style": {
+    "correction_style": "Gentle",
+    "encouragement_level": "High",
+    "focus": [
+      "Confidence",
+      "Natural communication",
+      "Practical expression"
+    ]
+  },
+
+  "evaluation_metrics": {
+    "pronunciation": 20,
+    "fluency": 20,
+    "confidence": 25,
+    "vocabulary_usage": 15,
+    "sentence_structure": 20
+  },
+
+  "difficulty_adjustment_rules": {
+    "if_score_above_80": "Increase complexity and introduce faster-paced discussions.",
+    "if_score_below_50": "Use shorter questions and simpler vocabulary."
+  },
+
+  "followup_tasks": [
+    "Summarize the meeting in 5 sentences.",
+    "Practice explaining project updates again.",
+    "Learn 5 workplace vocabulary words."
+  ]
+}

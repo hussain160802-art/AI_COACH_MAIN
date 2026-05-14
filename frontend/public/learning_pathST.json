@@ -1,0 +1,48 @@
+{
+  "user_id": "USR_101",
+  "band": "beginner",
+  "current_unlocked_day": 5,
+  "progress_percent": 4,
+  "learning_path": [
+    {
+      "day": 1,
+      "title": "Say Hello Confidently",
+      "theme": "Introduction",
+      "difficulty": "easy",
+      "duration_minutes": 35,
+      "xp_reward": 50,
+      "node_type": "lesson",
+      "preview": "Learn greetings and introductions",
+      "content_id": "lesson_day_1"
+    }
+  ]
+}
+
+{
+  "learning_path": [
+    {
+      "day": 1,
+      "title": "Say Hello Confidently",
+      "status": "unlocked",
+      "completed": false
+    },
+    {
+      "day": 2,
+      "title": "Talking About Family",
+      "status": "locked",
+      "completed": false
+    },
+    {
+      "day": 3,
+      "title": "Daily Routine",
+      "status": "locked",
+      "completed": false
+    },
+    {
+      "day": 4,
+      "title": "Food and Drinks",
+      "status": "locked",
+      "completed": false
+    }
+  ]
+}

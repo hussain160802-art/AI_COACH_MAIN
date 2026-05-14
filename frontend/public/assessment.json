@@ -1,0 +1,346 @@
+{
+  "assessment_id": "ENG_INITIAL_ASSESSMENT_001",
+  "assessment_name": "English Communication Initial Assessment",
+  "sections": [
+    {
+      "section_id": "SEC_01",
+      "section_name": "Icebreaker Speaking",
+      "section_type": "voice",
+      "difficulty": "easy",
+      "questions": [
+        {
+          "question_id": "SEC1_Q1",
+          "question_type": "voice_response",
+          "topic": "self introduction",
+          "question": "Please introduce yourself. Tell us your name, where you are from, what you do, and something interesting about yourself.",
+          "expected_response_duration_seconds": {
+            "min": 45,
+            "max": 90
+          },
+          "followup_questions": [
+            "What do you enjoy doing in your free time?",
+            "Can you describe a normal day in your life?",
+            "What are your future goals?"
+          ],
+          "evaluation_focus": [
+            "confidence",
+            "fluency",
+            "pronunciation",
+            "sentence_structure"
+          ]
+        },
+        {
+          "question_id": "SEC1_Q2",
+          "question_type": "voice_response",
+          "topic": "hobbies",
+          "question": "Talk about one hobby or activity you enjoy the most. Why do you like it?",
+          "expected_response_duration_seconds": {
+            "min": 45,
+            "max": 90
+          },
+          "followup_questions": [
+            "When did you start this hobby?",
+            "Do you usually do it alone or with others?",
+            "What have you learned from it?"
+          ],
+          "evaluation_focus": [
+            "confidence",
+            "fluency",
+            "vocabulary",
+            "pronunciation"
+          ]
+        },
+        {
+          "question_id": "SEC1_Q3",
+          "question_type": "voice_response",
+          "topic": "work and education",
+          "question": "Tell us about your studies or your current job responsibilities.",
+          "expected_response_duration_seconds": {
+            "min": 45,
+            "max": 90
+          },
+          "followup_questions": [
+            "What do you like most about it?",
+            "What challenges do you face?",
+            "What skills are important in your field?"
+          ],
+          "evaluation_focus": [
+            "communication_clarity",
+            "confidence",
+            "fluency",
+            "grammar"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "SEC_02",
+      "section_name": "Contextual Speaking",
+      "section_type": "voice",
+      "difficulty": "medium",
+      "questions": [
+        {
+          "question_id": "SEC2_Q1",
+          "question_type": "voice_response",
+          "topic": "problem solving",
+          "question": "Describe a situation where you faced a problem and explain how you solved it.",
+          "expected_response_duration_seconds": {
+            "min": 60,
+            "max": 120
+          },
+          "followup_questions": [
+            "What was the most difficult part?",
+            "Did anyone help you?",
+            "What did you learn from the experience?"
+          ],
+          "evaluation_focus": [
+            "fluency",
+            "communication_clarity",
+            "confidence",
+            "vocabulary"
+          ]
+        },
+        {
+          "question_id": "SEC2_Q2",
+          "question_type": "voice_response",
+          "topic": "opinions",
+          "question": "Do you think technology improves communication between people? Why or why not?",
+          "expected_response_duration_seconds": {
+            "min": 60,
+            "max": 120
+          },
+          "followup_questions": [
+            "Can you give an example?",
+            "Are there any disadvantages?",
+            "How has technology changed your daily life?"
+          ],
+          "evaluation_focus": [
+            "vocabulary",
+            "fluency",
+            "communication_clarity",
+            "confidence"
+          ]
+        },
+        {
+          "question_id": "SEC2_Q3",
+          "question_type": "voice_response",
+          "topic": "storytelling",
+          "question": "Describe a memorable event or experience from your life.",
+          "expected_response_duration_seconds": {
+            "min": 60,
+            "max": 120
+          },
+          "followup_questions": [
+            "Why was it memorable?",
+            "Who was involved?",
+            "How did you feel afterward?"
+          ],
+          "evaluation_focus": [
+            "fluency",
+            "storytelling_ability",
+            "confidence",
+            "pronunciation"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "SEC_03",
+      "section_name": "Grammar and Vocabulary",
+      "section_type": "written",
+      "difficulty": "medium",
+      "questions": [
+        {
+          "question_id": "SEC3_Q1",
+          "question_type": "mcq",
+          "question": "Choose the correct sentence.",
+          "options": [
+            "She go to office every day.",
+            "She goes to office every day.",
+            "She going to office every day.",
+            "She gone to office every day."
+          ],
+          "correct_answer": "She goes to office every day.",
+          "evaluation_focus": [
+            "grammar"
+          ]
+        },
+        {
+          "question_id": "SEC3_Q2",
+          "question_type": "fill_in_blank",
+          "question": "I __________ working on this project since Monday.",
+          "options": [
+            "am",
+            "was",
+            "have been",
+            "has been"
+          ],
+          "correct_answer": "have been",
+          "evaluation_focus": [
+            "grammar",
+            "sentence_structure"
+          ]
+        },
+        {
+          "question_id": "SEC3_Q3",
+          "question_type": "sentence_correction",
+          "question": "Correct the following sentence: 'He don't like attending meetings.'",
+          "correct_answer": "He doesn't like attending meetings.",
+          "evaluation_focus": [
+            "grammar",
+            "communication_clarity"
+          ]
+        },
+        {
+          "question_id": "SEC3_Q4",
+          "question_type": "contextual_vocabulary",
+          "question": "The manager asked the team to complete the task before the __________.",
+          "options": [
+            "deadline",
+            "holiday",
+            "meeting",
+            "lunch"
+          ],
+          "correct_answer": "deadline",
+          "evaluation_focus": [
+            "vocabulary"
+          ]
+        },
+        {
+          "question_id": "SEC3_Q5",
+          "question_type": "professional_communication",
+          "question": "Choose the most professional response.",
+          "options": [
+            "Send me the file now.",
+            "Can you please send me the file when possible?",
+            "Why didn't you send it?",
+            "I already told you."
+          ],
+          "correct_answer": "Can you please send me the file when possible?",
+          "evaluation_focus": [
+            "professional_vocabulary",
+            "communication_clarity"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "SEC_04",
+      "section_name": "Listening Comprehension",
+      "section_type": "listening",
+      "difficulty": "medium",
+      "questions": [
+        {
+          "question_id": "SEC4_Q1",
+          "question_type": "mcq",
+          "audio_script": "Hi Sarah, the meeting has been moved to 3 PM because the manager is unavailable in the morning. Please inform the design team.",
+          "question": "What time is the meeting scheduled now?",
+          "options": [
+            "10 AM",
+            "12 PM",
+            "3 PM",
+            "5 PM"
+          ],
+          "correct_answer": "3 PM",
+          "evaluation_focus": [
+            "listening_comprehension"
+          ]
+        },
+        {
+          "question_id": "SEC4_Q2",
+          "question_type": "mcq",
+          "audio_script": "The client requested a few changes in the presentation, especially in the budget section. We need to update it before tomorrow morning.",
+          "question": "What needs to be updated?",
+          "options": [
+            "The project timeline",
+            "The budget section",
+            "The team structure",
+            "The company website"
+          ],
+          "correct_answer": "The budget section",
+          "evaluation_focus": [
+            "listening_comprehension",
+            "context_understanding"
+          ]
+        },
+        {
+          "question_id": "SEC4_Q3",
+          "question_type": "main_idea",
+          "audio_script": "I usually start my day by checking emails, attending team meetings, and planning tasks for the day. This helps me stay organized and productive.",
+          "question": "What is the main idea of the audio?",
+          "options": [
+            "Exercise routine",
+            "Daily work organization",
+            "Weekend activities",
+            "Travel planning"
+          ],
+          "correct_answer": "Daily work organization",
+          "evaluation_focus": [
+            "main_idea_understanding",
+            "listening_comprehension"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "SEC_05",
+      "section_name": "Workplace Roleplay",
+      "section_type": "voice_roleplay",
+      "difficulty": "hard",
+      "questions": [
+        {
+          "question_id": "SEC5_Q1",
+          "scenario_type": "team meeting",
+          "ai_role": "manager",
+          "question": "Our project delivery is delayed by one week. Can you explain the reason and suggest a recovery plan?",
+          "conversation_turns": {
+            "min": 3,
+            "max": 6
+          },
+          "evaluation_focus": [
+            "confidence",
+            "professional_vocabulary",
+            "fluency",
+            "communication_clarity"
+          ]
+        },
+        {
+          "question_id": "SEC5_Q2",
+          "scenario_type": "client communication",
+          "ai_role": "client",
+          "question": "I am unhappy with the recent software update because several features are not working properly. How would you respond?",
+          "conversation_turns": {
+            "min": 3,
+            "max": 6
+          },
+          "evaluation_focus": [
+            "professional_communication",
+            "problem_solving_communication",
+            "confidence"
+          ]
+        },
+        {
+          "question_id": "SEC5_Q3",
+          "scenario_type": "job interview",
+          "ai_role": "interviewer",
+          "question": "Why should we hire you for this position?",
+          "followup_questions": [
+            "What are your strengths?",
+            "Describe a challenge you handled successfully.",
+            "How do you work in a team?"
+          ],
+          "conversation_turns": {
+            "min": 3,
+            "max": 6
+          },
+          "evaluation_focus": [
+            "confidence",
+            "fluency",
+            "communication_clarity",
+            "professional_vocabulary"
+          ]
+        }
+      ]
+    }
+  ]
+}

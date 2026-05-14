@@ -1,0 +1,227 @@
+{
+    "project_learning_domains": [
+        {
+            "id": 1,
+            "topic": "Basic Communication",
+            "description": "Foundational communication skills for daily English usage.",
+            "subtopics": [
+                "Self introduction",
+                "Greetings and introductions",
+                "Talking about yourself",
+                "Family and friends",
+                "Daily routines",
+                "Likes and dislikes",
+                "Asking simple questions",
+                "Describing people and objects",
+                "Talking about time",
+                "Talking about places",
+                "Basic opinions",
+                "Everyday conversations"
+            ]
+        },
+        {
+            "id": 2,
+            "topic": "Thinking in English",
+            "description": "Training learners to think directly in English instead of translating.",
+            "subtopics": [
+                "Quick response training",
+                "Visual description",
+                "Situation reaction",
+                "Thought narration",
+                "Inner monologue practice",
+                "Instant speaking drills"
+            ]
+        },
+        {
+            "id": 3,
+            "topic": "Listening Skills",
+            "description": "Improving listening comprehension through real-world English exposure.",
+            "subtopics": [
+                "Slow conversations",
+                "Real-world accents",
+                "Workplace listening",
+                "Movie and dialogue listening",
+                "Podcast understanding",
+                "Understanding fast speech",
+                "Understanding emotions in speech",
+                "Listening for meaning",
+                "Listening for context"
+            ]
+        },
+        {
+            "id": 4,
+            "topic": "Vocabulary Building",
+            "description": "Contextual vocabulary acquisition for practical communication.",
+            "subtopics": [
+                "Daily life vocabulary",
+                "Workplace vocabulary",
+                "Social communication vocabulary",
+                "Emotional vocabulary",
+                "Contextual expressions",
+                "Idioms and common phrases",
+                "Action verbs",
+                "Professional terminology"
+            ]
+        },
+        {
+            "id": 5,
+            "topic": "Pronunciation and Fluency",
+            "description": "Improving clarity, fluency, and natural speech patterns.",
+            "subtopics": [
+                "Word pronunciation",
+                "Sentence stress",
+                "Intonation",
+                "Rhythm of speech",
+                "Connected speech",
+                "Speaking pace",
+                "Reducing fillers",
+                "Speaking clarity",
+                "Natural pauses"
+            ]
+        },
+        {
+            "id": 6,
+            "topic": "Sentence Formation",
+            "description": "Helping learners naturally construct meaningful sentences.",
+            "subtopics": [
+                "Simple sentence formation",
+                "Expanding ideas",
+                "Asking questions",
+                "Explaining situations",
+                "Comparing things",
+                "Giving opinions",
+                "Cause and effect",
+                "Sequencing thoughts",
+                "Using connectors naturally"
+            ]
+        },
+        {
+            "id": 7,
+            "topic": "Real-World Conversations",
+            "description": "Practical communication in everyday and workplace situations.",
+            "subtopics": [
+                "Ordering food",
+                "Shopping conversations",
+                "Travel communication",
+                "Phone conversations",
+                "Team meetings",
+                "Project discussions",
+                "Client communication",
+                "Interviews",
+                "Networking conversations",
+                "Social discussions"
+            ]
+        },
+        {
+            "id": 8,
+            "topic": "Confidence Building",
+            "description": "Reducing fear and hesitation while speaking English.",
+            "subtopics": [
+                "Speaking without fear",
+                "Handling mistakes confidently",
+                "Reducing hesitation",
+                "Speaking longer sentences",
+                "Maintaining conversations",
+                "Responding quickly",
+                "Public speaking confidence"
+            ]
+        },
+        {
+            "id": 9,
+            "topic": "Grammar Through Usage",
+            "description": "Teaching grammar naturally through communication scenarios.",
+            "subtopics": [
+                "Talking about routines",
+                "Talking about past experiences",
+                "Talking about future plans",
+                "Describing objects",
+                "Talking about locations",
+                "Imagining situations",
+                "Using grammar in conversations",
+                "Natural sentence correction"
+            ]
+        },
+        {
+            "id": 10,
+            "topic": "Storytelling and Expression",
+            "description": "Developing expressive communication and narration skills.",
+            "subtopics": [
+                "Narrating experiences",
+                "Explaining events",
+                "Describing emotions",
+                "Story continuation",
+                "Personal experiences",
+                "Creative speaking",
+                "Expressive communication"
+            ]
+        },
+        {
+            "id": 11,
+            "topic": "Professional English Communication",
+            "description": "English communication skills for workplace and business scenarios.",
+            "subtopics": [
+                "Business communication",
+                "Meeting participation",
+                "Presentation speaking",
+                "Professional emails",
+                "Client interaction",
+                "Explaining technical ideas",
+                "Negotiation basics",
+                "Interview communication"
+            ]
+        },
+        {
+            "id": 12,
+            "topic": "Public Speaking",
+            "description": "Building confidence and structure in public communication.",
+            "subtopics": [
+                "Speaking clearly",
+                "Structuring ideas",
+                "Presentation flow",
+                "Audience engagement",
+                "Confident delivery",
+                "Handling pauses"
+            ]
+        },
+        {
+            "id": 13,
+            "topic": "Communication Psychology",
+            "description": "Understanding conversational flow, tone, and emotional communication.",
+            "subtopics": [
+                "Tone understanding",
+                "Emotional expression",
+                "Conversation flow",
+                "Empathy in communication",
+                "Active listening",
+                "Social confidence"
+            ]
+        },
+        {
+            "id": 14,
+            "topic": "Cultural Communication",
+            "description": "Learning communication etiquette and cultural nuances in English.",
+            "subtopics": [
+                "Workplace etiquette",
+                "Formal vs informal communication",
+                "Polite communication",
+                "Professional tone",
+                "Social norms in English"
+            ]
+        },
+        {
+            "id": 15,
+            "topic": "Natural English Exposure",
+            "description": "Passive and active exposure to real-world English content.",
+            "subtopics": [
+                "Movies",
+                "TV clips",
+                "Podcasts",
+                "Interviews",
+                "Real conversations",
+                "News snippets",
+                "Social media speech",
+                "Daily expressions"
+            ]
+        }
+    ]
+}
